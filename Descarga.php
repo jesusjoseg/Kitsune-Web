@@ -9,6 +9,6 @@
         <link rel="icon" type="image/x-icon" href="Src/gemini-svg.ico">
 </head>
 <body>
-    
+    <?php include 'Php/header.php'; ?>
 </body>
 </html>
