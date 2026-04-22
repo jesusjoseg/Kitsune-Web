@@ -11,6 +11,11 @@
             <li><a href="Precio.php">Precios</a></li>
             <li><a href="Descarga.php">Descarga</a></li>
             <li><a href="Contacto.php">Contacto</a></li>
+            <?php if(isset($_SESSION['user_id'])): ?>
+                <li><a href="Php/logout.php">Salir</a></li>
+            <?php else: ?>
+                <li><a href="Login.php">Iniciar Sesión</a></li>
+            <?php endif; ?>
         </ul>
     </nav>
 </header>
