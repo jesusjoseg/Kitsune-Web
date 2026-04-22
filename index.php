@@ -9,15 +9,7 @@
         <link rel="icon" type="image/x-icon" href="Src/Image/gemini-svg.ico">
     </head>
     <body>
-        <header>
-            <h1>Kitsune</h1>
-            <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Acerca.html">Acerca de</a></li>
-                <li><a href="Descarga.html">Descarga</a></li>
-            </ul>
-            </nav>
-        </header>
+        <?php include 'Php/header.php'; ?>
+        
     </body>
 </html>
