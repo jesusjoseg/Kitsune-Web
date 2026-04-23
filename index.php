@@ -10,6 +10,6 @@
     </head>
     <body>
         <?php include 'Php/header.php'; ?>
-        
+        <?php include 'Php/Footer.php'; ?>
     </body>
 </html>

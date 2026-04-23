@@ -47,3 +47,30 @@ body{
 .nav-link a:hover{
     color: #ff5e00;
 }
+.main-Footer{
+    background-color: #1a1a1a;
+    color:#ccc;
+    padding: 2rem 5%;
+    margin-top: 50px;
+    border-top: 2px solid #ff5e00;
+}
+.footer-conteint{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+}
+.footer-links a{
+    color:#ccc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+.footer-links a:hover{
+    color:#ff5e00;  
+}
+.footer-info{
+    text-align: left;
+}
