@@ -10,5 +10,10 @@
 </head>
 <body>
     <?php include 'Php/header.php'; ?>
+    <main>
+        <h1>Descarga</h1>
+        <p>Bienvenido a la página de descarga.</p>
+    </main>
+    <?php include 'Php/Footer.php' ?>
 </body>
 </html>
