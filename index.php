@@ -10,6 +10,10 @@
     </head>
     <body>
         <?php include 'Php/header.php'; ?>
+        <main>
+            <h1>Bienvenido a Kitsune</h1>
+            <p>Tu sistema de ventas confiable y eficiente.</p>
+        </main>
         <?php include 'Php/Footer.php'; ?>
     </body>
 </html>
