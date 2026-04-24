@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    
+    <?php include 'Php/header.php'; ?>
+    <h1>Contacto</h1>
+    <p>Bienvenido a la página de contacto.</p>
+    <?php include 'Php/Footer.php' ?>
 </body>
 </html>
