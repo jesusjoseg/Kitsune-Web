@@ -11,6 +11,7 @@
 <body>
     <?php include 'Php/header.php'; ?>
     <h1>Iniciar Sesión</h1>
+    <div>
     <form action="Php/ProcessLogin.php" method="post">
         <label for="Correo">Correo</label>
         <input type="email" id="Correo" name="Correo" required>
@@ -19,5 +20,8 @@
         <p>¿Olvidates tu contraseña? <a href="Php/ResetPassword.php">Restablecer</a></p>
         <input type="submit" value="Iniciar Sesión">
     </form>
+    <a href="Registro.php" class="Regristo">¿No tienes cuenta? Regístrate aquí</a>
+    </div>
+    <?php include 'Php/Footer.php' ?>
 </body>
 </html>
