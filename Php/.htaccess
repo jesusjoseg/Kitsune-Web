@@ -1,0 +1,8 @@
+Options -Indexes
+
+# 2. Denegar el acceso directo a los archivos .php de esta carpeta
+# Esto evita que alguien escriba tuweb.com/Php/Conexion.php y vea errores
+<Files "*.php">
+    Order Deny,Allow
+    Deny from all
+</Files>

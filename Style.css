@@ -184,6 +184,52 @@ body{
 .locked-sectors span i{
     margin-right:5px ;
 }
+.version-item{
+    background: #151515;
+    border-left: 4px solid #ff5e00;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    text-align: left;
+}
+.version-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.version-number{
+    color: #ff5e00;
+    font-size: 1.2rem;
+}
+.version-deatails li{
+    margin-bottom: 8px;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+.tag-new{
+    color:#00ff00;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.7rem;
+}
+.tag-update{
+    color: #00ccff;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.7rem;
+}
+.tag-Fix{
+    color: #ff3333;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.7rem;
+}
+.old-version{
+    opacity: 0.6;
+    border-left-color: #444;
+}
+
 
 
 

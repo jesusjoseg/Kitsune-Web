@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Jesus Jose Gardea">
@@ -89,7 +89,7 @@
                         </div>
                         <p>Y ademas de la siguetes mejoras:</p>
                         <div class="locked-sectors">
-    
+
                         </div>
                     </div>
                 </div>
@@ -97,6 +97,29 @@
             <section class="version-history">
                 <div class="container">
                     <h2><i class="fas fa-history orange"></i> Historia de Version</h2>
+                    <div class="version-item">
+                        <div class="version-header">
+                            <span class="version-number">V0.8 (Actual)</span>
+                            <span class="version-date">Abril 2026</span>
+                        </div>
+                        <ul class="version-deatails">
+                            <li><span class="tag-new">Nuevo: </span>se le agrego un barra de menu</li>
+                            <li><span class="tag-new">Nuevo: </span>se le agregor una ventana donde usuario puede agregar dato para recibo</li>
+                            <li><span class="tag-update">Mejora: </span>Cambio de Diseño de la intrefaz</li>
+                            <li><span class="tag-update">Mejora: </span>la tabla de invertario ahora muestra cuando el producto se acaba</li>
+                            <li><span class="tag-Fix">FIX:</span>producto sin imagen cerraba la app en venta, Ahora a crea una compra se le agregar una imagen por deafult</li>
+                        </ul>
+                    </div>
+                    <div class="version-item old-version">
+                        <div class="version-header">
+                            <span class="version-number">V0.5</span>
+                            <span class="version-date">Noviembre 2025</span>
+                        </div>
+                        <ul class="version-deatails">
+                            <li><span class="tag-new">NUEVO: </span>Lazamiento de la base de dato en python</li>
+                            <li><span class="tag-new">NUEVO: </span>Interfaz básica para boutique y ropa</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </main>
