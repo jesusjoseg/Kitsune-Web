@@ -33,6 +33,27 @@
                     <p>Controla tu inventario de manera automatica con cada venta realizada</p>
                 </div>
             </section>
+            <section class="cta-section">
+                <h2>¿Listo para empreza?</h2>
+                <p>Únete a los negocios que ya Confian en la Velocidad de Kitsune POS</p>
+                <a href="Registro.php" class="btn-login">Comenza ahoras mismo</a>
+            </section> 
+            <section class="stats-grid">
+                <div class="stats-item">
+                </div>
+                <div class="stats-item">
+                </div>
+                <div class="stats-item">
+                    <span class="orange">Codigo</span>
+                    <p>100% hecho a mano</p>
+                    <small>Sin plantillas  pesadas ni basura</small>
+                </div>
+            </section>
+            <section class="project-roadmap">
+                <div class="container">
+                    <h2>Lo que estamos construyendo</h2>
+                </div>
+            </section>
         </main>
         <?php include 'Php/Footer.php'; ?>
     </body>
