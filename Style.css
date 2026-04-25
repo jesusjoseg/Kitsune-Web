@@ -143,4 +143,47 @@ body{
     border-bottom: 1px solid #333;
     margin: 40px 0;
 }
+.active-sectors{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 15;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.sector-bacger{
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+.sector-bacger.active{
+    border-color: #ff5e00;
+    box-shadow: 0 0 10px rgba(255, 94, 0, 0.2);
+}
+.sector-bacger i{
+    color: #ff5e00;
+}
+.upcoming-update{
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px dashed #444;
+}
+.locked-sectors{
+    display: flex;
+    justify-content:center ;
+    gap: 20px;
+    opacity: .6;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+.locked-sectors span i{
+    margin-right:5px ;
+}
+
+
 

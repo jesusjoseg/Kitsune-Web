@@ -54,6 +54,51 @@
                     <h2>Lo que estamos construyendo</h2>
                 </div>
             </section>
+            <section class="version-status">
+                <div class="container">
+                    <h2>Estado de la version <span class="orange">Version 0.8</span></h2>
+                    <p>Actualmente Kitsune POS  esta optimizado  para los siguiente Sectores:</p>
+                    <div class="active-sectors">
+                        <div class="sector-bacger active">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Videojuegos</span>
+                        </div>
+                        <div class="sector-bacger active">
+                            <i class="fas fa-laptop"></i>
+                            <span>Compucto y Hardware</span>
+                        </div>
+                        <div class="sector-bacger active">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Bolsa y accesorios</span>
+                        </div>
+                        <div class="sector-bacger active">
+                            <i class="fas fa-tshirt"></i>
+                            <span>Boutique y Ropa</span>
+                        </div>
+                    </div>
+                    <div class="upcoming-update">
+                        <h3><i class="fas fa-clock orange" > </i>Proximante en la Version 1.0</h3>
+                        <p>Estamo trabajando en para intregra  los siguinte:</p>
+                        <div class="locked-sectors">
+                            <span><i class="fas fa-utensils"></i>Abarrotes</span>
+                            <span><i class="fas fa-pills"></i>Farmacia</span>
+                            <span><i class="fas fa-tools"></i>Ferreteria</span>
+                            <span><i class="fas fa-print"></i>Papeleria</span>
+                            <span><i class=""></i></span>
+                            <span><i class=""></i></span>
+                        </div>
+                        <p>Y ademas de la siguetes mejoras:</p>
+                        <div class="locked-sectors">
+    
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="version-history">
+                <div class="container">
+                    <h2><i class="fas fa-history orange"></i> Historia de Version</h2>
+                </div>
+            </section>
         </main>
         <?php include 'Php/Footer.php'; ?>
     </body>
