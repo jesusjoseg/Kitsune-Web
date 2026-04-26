@@ -49,6 +49,26 @@
                     <small>Sin plantillas  pesadas ni basura</small>
                 </div>
             </section>
+            <section class="app-showcase">
+                <div class="container">
+                    <h2>Echa un vistazo  a la <span class="orange">Interfaz</span></h2>
+                    <p>Diseño limpio y mordeno, optimizado  para jornada de trabajo intensas.</p>
+                    <div class="screenshots-grind">
+                        <div class="screensjots-item">
+                            <img src="Src/Image/Captura_Venta.png" alt="Pantalla de venta de kitsune">
+                            <h4>ventana de ventas</h4>
+                        </div>
+                        <div class="screensjots-item">
+                            <img src="Src/Image/Captura_Invertario.png" alt="Pantalla de Invertario de kitsune">
+                            <h4>ventana de invertario</h4>
+                        <div class="screensjots-item">
+                            <img src="Src/Image/Captura_Compra.png" alt="Pantalla de compra de kitsune">
+                            <h4>ventana de compras</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="project-roadmap">
                 <div class="container">
                     <h2>Lo que estamos construyendo</h2>

@@ -229,6 +229,27 @@ body{
     opacity: 0.6;
     border-left-color: #444;
 }
+.screenshots-grind{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.screensjots-item img{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #333;
+    transition: transform 0.3s ,border-color 0.3s;
+    cursor: pointer;
+}
+.screensjots-item img:hover{
+    transform: scale(1.05);
+    border-color: #888;
+}
+screenshots-grind h4{
+    margin-top: 15px;
+    color: #888;
+}
 
 
 
