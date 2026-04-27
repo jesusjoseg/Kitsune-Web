@@ -13,30 +13,30 @@
         <?php include 'Php/header.php'; ?>
         <main class="hero-section">
             <div class="hero-content">
-            <h1>Controla tu negrocios con <span class="orange">Kitsune POS</span></h1>
-            <p>La herramienta perfecta de venta mas rapida, intuitiva y poderosa para los negocios.</p>
+            <h1>Controla tu negocios con <span class="orange">Kitsune POS</span></h1>
+            <p>La herramienta perfecta de venta más rapida, intuitiva y poderosa para los negocios.</p>
             </div>
             <section class="features">
                 <div class="feature-card">
                     <i class="fas fa-bolt orange"></i>
                     <h3>Velocidad Real</h3>
-                    <p>Ventas procesadas en milisegundos para que no hagas esperar a tu clientes</p>
+                    <p>Ventas procesadas en milisegundos para que no hagas esperar a tus clientes</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-shield-alt orange"></i>
                     <h3>Seguridad Total</h3>
-                    <p>tus dato y los cliente protegidos con ecritacion de grado comercial</p>
+                    <p>tus dato y los cliente protegidos con encriptación de grado comercial</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-chart-pie orange"></i>
-                    <h3>Invetario Vivo</h3>
+                    <h3>Inventario Vivo</h3>
                     <p>Controla tu inventario de manera automatica con cada venta realizada</p>
                 </div>
             </section>
             <section class="cta-section">
-                <h2>¿Listo para empreza?</h2>
-                <p>Únete a los negocios que ya Confian en la Velocidad de Kitsune POS</p>
-                <a href="Registro.php" class="btn-login">Comenza ahoras mismo</a>
+                <h2>¿Listo para empezar?</h2>
+                <p>Únete a los negocios que ya confían en la velocidad de Kitsune POS</p>
+                <a href="Registro.php" class="btn-login">Comienza ahora mismo</a>
             </section> 
             <section class="stats-grid">
                 <div class="stats-item">
@@ -52,7 +52,7 @@
             <section class="app-showcase">
                 <div class="container">
                     <h2>Echa un vistazo  a la <span class="orange">Interfaz</span></h2>
-                    <p>Diseño limpio y mordeno, optimizado  para jornada de trabajo intensas.</p>
+                    <p>Diseño limpio y moderno, optimizado  para jornadas de trabajo intensas.</p>
                     <div class="screenshots-grind">
                         <div class="screensjots-item">
                             <img src="Src/Image/Captura_Venta.png" alt="Pantalla de venta de kitsune">
@@ -60,7 +60,7 @@
                         </div>
                         <div class="screensjots-item">
                             <img src="Src/Image/Captura_Invertario.png" alt="Pantalla de Invertario de kitsune">
-                            <h4>ventana de invertario</h4>
+                            <h4>ventana de Inventario</h4>
                        </div>
                        <div class="screensjots-item">
                             <img src="Src/Image/Captura_Compra.png" alt="Pantalla de compra de kitsune">
@@ -68,7 +68,7 @@
                         </div>
                         <div class="screensjots-item">
                             <img src="Src/Image/Captura_Apetura.png" alt="Configuracion de apertura">
-                            <h4>Configuracion de Sistemas</h4>
+                            <h4>Configuracion de Sistema</h4>
                         </div>
                         <div class="screensjots-item">
                             <img src="Src/Image/Captura_Recibo.png" alt="Ticker de venta">
@@ -85,7 +85,7 @@
             <section class="version-status">
                 <div class="container">
                     <h2>Estado de la version <span class="orange">Version 0.8</span></h2>
-                    <p>Actualmente Kitsune POS  esta optimizado  para los siguiente Sectores:</p>
+                    <p>Actualmente Kitsune POS  esta optimizado  para los siguientes Sectores:</p>
                     <div class="active-sectors">
                         <div class="sector-bacger active">
                             <i class="fas fa-gamepad"></i>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="sector-bacger active">
                             <i class="fas fa-laptop"></i>
-                            <span>Compucto y Hardware</span>
+                            <span>Cómputo y Hardware</span>
                         </div>
                         <div class="sector-bacger active">
                             <i class="fas fa-shopping-bag"></i>
@@ -106,12 +106,12 @@
                     </div>
                     <div class="upcoming-update">
                         <h3><i class="fas fa-clock orange" > </i>Proximante en la Version 1.0</h3>
-                        <p>Estamo trabajando en para intregra  los siguinte:</p>
+                        <p>Estamos trabajando en para integrar  los siguientes:</p>
                         <div class="locked-sectors">
                             <span><i class="fas fa-utensils"></i>Abarrotes</span>
                             <span><i class="fas fa-pills"></i>Farmacia</span>
-                            <span><i class="fas fa-tools"></i>Ferreteria</span>
-                            <span><i class="fas fa-print"></i>Papeleria</span>
+                            <span><i class="fas fa-tools"></i>Ferretería</span>
+                            <span><i class="fas fa-print"></i>Papelería</span>
                             <span><i class=""></i></span>
                             <span><i class=""></i></span>
                         </div>
@@ -124,7 +124,7 @@
             </section>
             <section class="version-history">
                 <div class="container">
-                    <h2><i class="fas fa-history orange"></i> Historia de Version</h2>
+                    <h2><i class="fas fa-history orange"></i> Historia de Versiones</h2>
                     <div class="version-item">
                         <div class="version-header">
                             <span class="version-number">V0.8 (Actual)</span>
@@ -132,7 +132,7 @@
                         </div>
                         <ul class="version-deatails">
                             <li><span class="tag-new">Nuevo: </span>se le agrego un barra de menu</li>
-                            <li><span class="tag-new">Nuevo: </span>se le agregor una ventana donde usuario puede agregar dato para recibo</li>
+                            <li><span class="tag-new">Nuevo: </span>se le agregó una ventana donde usuario puede agregar dato para recibo</li>
                             <li><span class="tag-update">Mejora: </span>Cambio de Diseño de la interfaz </li>
                             <li><span class="tag-update">Mejora: </span>la tabla de invertario ahora muestra cuando el producto se acaba</li>
                             <li><span class="tag-Fix">FIX:</span>producto sin imagen cerraba la app en venta, Ahora a crea una compra se le agregar una imagen por deafult</li>
@@ -144,7 +144,7 @@
                             <span class="version-date">Noviembre 2025</span>
                         </div>
                         <ul class="version-deatails">
-                            <li><span class="tag-new">NUEVO: </span>Lazamiento de la base de dato en python</li>
+                            <li><span class="tag-new">NUEVO: </span>Lazamiento de la base de datos en python</li>
                             <li><span class="tag-new">NUEVO: </span>Interfaz básica para boutique y ropa</li>
                         </ul>
                     </div>
