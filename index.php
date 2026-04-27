@@ -61,10 +61,18 @@
                         <div class="screensjots-item">
                             <img src="Src/Image/Captura_Invertario.png" alt="Pantalla de Invertario de kitsune">
                             <h4>ventana de invertario</h4>
-                        <div class="screensjots-item">
+                       </div>
+                       <div class="screensjots-item">
                             <img src="Src/Image/Captura_Compra.png" alt="Pantalla de compra de kitsune">
                             <h4>ventana de compras</h4>
                         </div>
+                        <div class="screensjots-item">
+                            <img src="Src/Image/Captura_Apetura.png" alt="Configuracion de apertura">
+                            <h4>Configuracion de Sistemas</h4>
+                        </div>
+                        <div class="screensjots-item">
+                            <img src="Src/Image/Captura_Recibo.png" alt="Ticker de venta">
+                            <h4>Recibo de ventas con la configuracion</h4>
                         </div>
                     </div>
                 </div>
@@ -125,7 +133,7 @@
                         <ul class="version-deatails">
                             <li><span class="tag-new">Nuevo: </span>se le agrego un barra de menu</li>
                             <li><span class="tag-new">Nuevo: </span>se le agregor una ventana donde usuario puede agregar dato para recibo</li>
-                            <li><span class="tag-update">Mejora: </span>Cambio de Diseño de la intrefaz</li>
+                            <li><span class="tag-update">Mejora: </span>Cambio de Diseño de la interfaz </li>
                             <li><span class="tag-update">Mejora: </span>la tabla de invertario ahora muestra cuando el producto se acaba</li>
                             <li><span class="tag-Fix">FIX:</span>producto sin imagen cerraba la app en venta, Ahora a crea una compra se le agregar una imagen por deafult</li>
                         </ul>
