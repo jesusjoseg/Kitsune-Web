@@ -14,8 +14,8 @@ $Env =loadenv(__DIR__.'/.env');
 $host =$Env['DB_HOST']??'';
 $user= $Env['DB_USER']??'';
 $password =$Env['DB_PASSWORD']??'';
-$datebase= $Env['DB_NAME']??'';
-$Conexion = mysqli_connect($host,$user,$password,$datebase);
+$database= $Env['DB_NAME']??'';
+$Conexion = mysqli_connect($host,$user,$password,$database);
 if ($Conexion->connect_error){
     die("Erro de conexion:".$Conexion->connect_error);
 }
