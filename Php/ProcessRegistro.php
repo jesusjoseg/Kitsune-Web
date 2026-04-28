@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"]=='POST'){
     $password_hash = password_hash($contrasena,PASSWORD_BCRYPT);
     $sql="INSERT INTO usuarios (Nombre,Apellido,Correo,Contrasena,Telefono) VALUES(?,?,?,?,?)";
     $stmt = $Conexion->prepare($sql);
-    $stmt -> blind_param("sssss",$nombre,$apellido,$correo,$password_hash,$telefono);
+    $stmt -> bind_param("sssss",$nombre,$apellido,$correo,$password_hash,$telefono);
     if($stmt->execute()){
         echo "¡Regristo exitoso! Ahora puede probar el flujo de pago.";
     }
