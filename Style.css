@@ -250,7 +250,59 @@ screenshots-grind h4{
     margin-top: 15px;
     color: #888;
 }
-
-
-
-
+.regristo-main{
+    padding: 100px 20px;
+    background: #050505;
+    min-height: 80vh;
+}
+.registro-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin:0 auto;
+    align-items: center;
+}
+.registro-card{
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.form-registro .input-group{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-registro label{
+    display: block;
+    color: #888;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+.form-registro input{
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+}
+.form-registro input:focus{
+    border-color: #ff5e00;
+    outline: none;
+}
+.beneficios-list{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.beneficios-list li{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+@media (max-width:768px){
+    .registro-container{
+        grid-template-columns: 1fr;
+    }
+}
