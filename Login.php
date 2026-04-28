@@ -6,14 +6,14 @@
     <title>Iniciar Sesión -- Kitsune POS</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="icon" type="image/x-icon" href="Src/gemini-svg.ico">
+    <link rel="icon" type="image/x-icon" href="Src/Image/gemini-svg.ico">
 </head>
 </head>
 <body>
     <?php include 'Php/header.php'; ?>
     <main class="login-container">
-        
-        <h1>Iniciar Sesión</h1>
-        <div>
+        <div class="login-card">
+            <h1>Iniciar Sesión</h1>
             <form action="Php/ProcessLogin.php" method="post">
                 <div class="input-group">
                     <label for="Correo">Correo</label>

@@ -306,3 +306,75 @@ screenshots-grind h4{
         grid-template-columns: 1fr;
     }
 }
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+    background: #050505;
+}
+.login-card{
+    background: #111;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.login-card h1{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+.login-card .input-group{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.login-card label{
+    display: block;
+    color: #888;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+.login-card input[type="email"],
+.login-card input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    transition: borde-color 0.3s;
+}
+.login-card :focus{
+    border-color: #ff5e00;
+    outline: none;
+}
+.login-card p, .login-card.Regristo{
+    font-size: 0.85rem;
+    margin-top: 15px;
+    display: block;
+    color:#bbb
+}
+.login-card a{
+    color: #ff5e00;
+    text-decoration: none;
+    font-weight: bold;
+}
+.login-card:hover{
+    text-decoration: underline;
+}
+.login-card input[type="submit"]{
+    width: 100%;
+    padding: 14px;
+    background: #ff5e00;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s , transform 0.2s;
+    margin-top: 10px;
+}
