@@ -33,6 +33,7 @@
                     <p>Controla tu inventario de manera automatica con cada venta realizada</p>
                 </div>
             </section>
+            <?php include 'Php/AnuciosLeft2.php' ?>
             <section class="cta-section">
                 <h2>¿Listo para empezar?</h2>
                 <p>Únete a los negocios que ya confían en la velocidad de Kitsune POS</p>

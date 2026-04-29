@@ -10,9 +10,7 @@
 </head>
 <body>
     <?php include 'Php/header.php'; ?>
-    <main>
-        <h1>Precios</h1>
-        <p>Bienvenido a la página de precios.</p>
+    
     <?php include 'Php/Footer.php'; ?>
 </body>
 </html>

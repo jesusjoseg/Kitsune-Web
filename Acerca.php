@@ -10,10 +10,12 @@
     </head>
     <body>
         <?php include 'Php/header.php'; ?>
-        <main>
-            <h1>Acerca de Nosotros</h1>
-            <p>Bienvenido a Kitsune, tu tienda en línea de confianza para todos tus productos favoritos.</p>
-        </main>
+        <main class="container-acerca">
+        <section class="hero-section">
+
+        </section>
+        
+    </main>
     <?php include 'Php/Footer.php' ?>
     </body>
 </html>
