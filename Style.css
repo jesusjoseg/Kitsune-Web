@@ -411,3 +411,25 @@ screenshots-grind h4{
     font-size: 1.2rem;
     color: #ccc;
 }
+.price-grid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.price-card{
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    transition: trasform 0.3;
+}
+.price{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff5e00;
+    margin: 15px 0;
+}
