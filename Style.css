@@ -433,3 +433,35 @@ screenshots-grind h4{
     color: #ff5e00;
     margin: 15px 0;
 }
+.btn-buy{
+    background-color: #ff8c00;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-free{
+    background-color: #f4f4f4;
+    color: #555;
+    border: 2px solid #ddd;
+}
+.btn-buy, .btn-free{
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.btn-free:hover{
+    background-color:#e0e0e0;
+    border: #bbb;
+    color: #333;
+}
+.btn-buy:hover{
+    background-color: #e67e00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
