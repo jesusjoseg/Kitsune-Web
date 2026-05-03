@@ -22,7 +22,7 @@
                     <li>Inventario básicos</li>
                     <li>Generación de Tickets de Venta</li>
                 </ul>
-                <a href="Php/Compra.php?Plan=Basico" class="btn-buy">Compra Plan Basico</a>
+                <a href="Compra.php?Plan=Basico" class="btn-buy">Compra Plan Basico</a>
             </div>
             <div class="price-card">
                 <h2>Lincecia PRO</h2>
@@ -33,7 +33,7 @@
                     <li>Gestión de Créditos (Cuentas por Cobrar)</li>
                     <li>Reportes Retroactivos en PDF</li>
                 </ul>
-                <a href="Php/Compra.php?Plan=Pro" class="btn-buy">Compra plan Pro</a>
+                <a href="Compra.php?Plan=Pro" class="btn-buy">Compra plan Pro</a>
             </div>
             <div class="price-card">
                 <h2>Pruebla Gratuita</h2>
