@@ -246,7 +246,7 @@ body{
     transform: scale(1.05);
     border-color: #888;
 }
-screenshots-grind h4{
+.screenshots-grind h4{
     margin-top: 15px;
     color: #888;
 }
@@ -464,4 +464,11 @@ screenshots-grind h4{
     background-color: #e67e00;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
 }
