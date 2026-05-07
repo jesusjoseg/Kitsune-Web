@@ -472,3 +472,28 @@ body{
     text-align: center;
     color: white;
 }
+.Intalar{
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    display: inline-block;
+
+}
+.Intrucion{
+    margin-top: 40px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+}
+.Intrucion h4{
+color: #ff8c00;
+}
+.Intrucion ol{
+    line-height: 1.6;
+    color:#ddd;
+}
