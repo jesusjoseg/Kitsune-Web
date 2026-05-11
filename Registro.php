@@ -50,6 +50,10 @@
                     <input type="text" name="Apellido" id="Apellido" required>
                 </div>
                 <div class="input-group">
+                    <label for="Usuario">Usuario</label>
+                    <input type="text" name="Usuario" id="Usuario">
+                </div>
+                <div class="input-group">
                     <label for="Correo">Correo:</label>
                     <input type="email" name="Correo" id="Correo" placeholder="tunombre@ejemplo.com"required>
                 </div>
