@@ -1,13 +1,13 @@
 <?php
 session_start();
 require_once 'Php/Conexion.php';
-if(!isset($_SESSION['usuario_id'])){
+if(!isset($_SESSION['user_id'])){
     header("Location: login.php");
     exit();
 }
-$user_id = $_SESSION['usuario_id'];
+$user_id = $_SESSION['user_id'];
 $mesanje = '';
-$stmt = $conn->prepare("SELECT Nombre,Apellido,Usuario,Correo,Licencia,Nivel,Vincule,NombrePc,Fecha,verificado FROM Usuario WHERE = ?");
+$stmt = $Conexion->prepare("SELECT Nombre,Apellido,Usuario,Correo,Licencia,Nivel,Vincule,NombrePc,Fecha,verificado FROM Usuario WHERE id = ?");
 $stmt->bind_param("i",$user_id);
 $stmt->execute();
 $resultado =$stmt->get_result();
@@ -34,20 +34,39 @@ if($DiaRestante<0) $DiaRestante=0;
         <div>
             <a href=""></a>
             <div class="d-flex text-white">
-                <span></span>
-                <a href="">Cerra sesión</a>
+                <span>¡Bienvenido, <strong><?php echo$user['Usuario']; ?></strong>! </span>
+                <a href="Php/logout.php" class="btn btn-sm btn-outline-light ms-3">Cerra sesión</a>
             </div>
         </div>
     </nav>
-    <div class="">
-        <div>
-            <div>
-                <div>
-                    <div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card card-perfil shadow-sm p-4 text-center">
+                    <div class="mb-3">
                         <img src="" alt="Avatar">
                     </div>
-                    <h4></h4>
+                    <h4><?php echo $user['Nombre']." ".$user['Apellido']; ?></h4>
+                    <p class="text-muted"><?php echo $user['Correo'] ?></p>
+                    <hr>
+                    <div class="mb-2">
+                        <span class="text-muted d-block">Nivel de Cuenta:</span>
+                        <?php
+                        $clase_badge="badge-demo";
+                        if($user['Nivel']=='PRO') $clase_badge="badge-pro" ;
+                        if($user['Nivel']=='BASICO') $clase_badge="badge-basico" ;
+                         ?>
+                         <span class="badge <?php echo $clase_badge;?> p-2 fs-6"><?php echo$user['Nivel']; ?></span>
+                    </div>
                 </div>
+            </div>
+            <div class="col-md-8">
+                <?php
+                if($user['verificado']==0):?>
+                    <div class="alert alert-danger shadow-sm">
+                        <p><strong>¡Antecion!</strong> Tu correo no ha sido verificado</p>
+                    </div>
+                    <?php endif; ?>
             </div>
         </div>
     </div>
