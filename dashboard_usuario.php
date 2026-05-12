@@ -66,9 +66,56 @@ if($DiaRestante<0) $DiaRestante=0;
                     <div class="alert alert-danger shadow-sm">
                         <p><strong>¡Antecion!</strong> Tu correo no ha sido verificado</p>
                     </div>
-                    <?php endif; ?>
+                <?php endif; ?>
+                <div class="card card-cutom shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">Detalles de Licencia</h5>
+                        <div class="row mt-3">
+                            <div class="col-sm-6">
+                                <p class="mb-0 text-muted">Codigo de Activacion</p>
+                                <p class="fw-bold fs-5 text-primary"><?php echo $user['Licencia']?:'NO ASIGNADA'; ?></p>
+                            </div>
+                            <div class="col-sm-6 text-sm-end">
+                                <?php if($user['Nivel']=='DEMO'): ?>
+                                    <p class="mb-0 text-muted"> Días de Prueba:</p>
+                                    <p class="fw-bold fs-5 text-danger"><?php $DiaRestante ?>Dias Restante</p>
+                                <?php else: ?>
+                                    <p class="mb-0 text-muted">Estado:</p>
+                                    <p class="fw-bold fs-5 text-success">Activa</p>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <?php if($user['Nivel']=='BASICO'|| $user['Nivel']=='DEMO'):?>
+                            <div class="upgrade-section mt-3 p-3 border-start border-warning border-4">
+                                <h6>Mejora de Version</h6>
+                                <p class="small text-muted">Obten todas la funciones avazandas.</p>
+                                <a href="" class="btn btn-warning btn-sm">Actualizar Ahora</a>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="card card-custom shadow-sm">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3">Equipo Vinculado</h5>
+                        <?php if(!empty($user['Vincule'])): ?>
+                            <div class="pc-info-box d-flex justify-content-between align-items-center p-3 border rounded">
+                                <div>
+                                    <h6 class="mb-1"><?php echo $user['NombrePc']?: 'PC Principal'; ?></h6>
+                                    <code class="small text-break"><?php echo $user['Vincule']; ?></code>
+                                </div>
+                                <button onclick="ConfimarBorrarPC" class="btn btn-outline-danger btn-sm">Desvincula</button>
+                            </div>
+                            <?php else: ?>
+                                <div class="alert alert-info">Abre la App en tu PC Vincularla</div>
+                            <?php endif; ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script>
+        
+    </script>
+    <script src="https://cdn.npmmirror.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
