@@ -501,3 +501,19 @@ color: #ff8c00;
     background-color: #95a5a6;
     color: white;
 }
+.badge-pro{
+    background: linear-gradient(45deg,#f1c40f,#f39c12);
+    color: white;
+}
+.badge-basico{
+    background-color: #95a5a6;
+    color: white;
+}
+.card-custom, .card-perfil{
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+.upgrade-section{
+    background-color: #fff9e6;
+}
