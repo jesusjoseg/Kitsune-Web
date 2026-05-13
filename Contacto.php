@@ -18,6 +18,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $aleta="¡Reporte enviado con éxito! Nuestro equipo lo revisara.";
         $mensaje_clase ="alert-success";
     }
+    else{
+        $aleta="Error al enviar el reporte. Intretalo más tarde.";
+        $mensaje_clase="alert-danger";
+    }
 }
 ?>
 <!DOCTYPE html>
