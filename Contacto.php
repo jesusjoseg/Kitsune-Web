@@ -1,5 +1,8 @@
 <?php
-session_start();
+if(session_status() === PHP_SESSION_NONE){
+    session_start();
+}
+
 require_once 'Php/Conexion.php';
 if(!isset($_SESSION['user_id'])){
     header("Location: Login.php");
@@ -9,10 +12,10 @@ $mensaje_clase="";
 $aleta ="";
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $id_User =$_SESSION['user_id'];
-    $Asunto =$_POST['asunto'];
+    $Asunto =$_POST['Asunto'];
     $Tipo =$_POST['Tipo'];
     $Texto= $_POST['Mensaje'];
-    $stmt =$Conexion->prepare("INSERT INTRO Reporte(Usuario_id,Asunto,Tipo,Mensaje) VALUES(?,?,?,?)");
+    $stmt =$Conexion->prepare("INSERT INTO Reporte(Usuario_id,Asunto,Tipo,Mensaje) VALUES(?,?,?,?)");
     $stmt ->bind_param("isss",$id_User,$Asunto,$Tipo,$Texto);
     if($stmt->execute()){
         $aleta="¡Reporte enviado con éxito! Nuestro equipo lo revisara.";
@@ -45,7 +48,34 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                     <div class="card-headder bg-dark text-white p-3">
                         <h5 class="mb-0">Enviar un Reporte /Contacto</h5>
                     </div>
-
+                    <div class="card-body p-4">
+                        <?php if($aleta): ?>
+                            <div class="alert <?php echo $mensaje_clase; ?>"><?php echo $aleta; ?></div>
+                        <?php endif; ?>
+                        <form action="Contacto.php" method="POST">
+                            <div class="mb-3">
+                                <label class="form-label">Tipo de Reporte</label>
+                                <select name="Tipo" id="Tipo" class="form-select" required>
+                                    <option value="Soporte">Soporte Tecnico</option>
+                                    <option value="Pagos">Dudas con mi pago / Licencia</option>
+                                    <option value="Bug">Reporta un Error</option>
+                                    <option value="Surgerencia">Sugerncia</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Asunto Corto</label>
+                                <input type="text" name="Asunto" id="Asunto" class="form-control" placeholder="" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mensaje Detallado</label>
+                                <textarea  name="Mensaje" id="Mensaje" class="form-control" row="5" placeholder="Ecribir tu mensaje" required></textarea>
+                            </div>
+                            <div class="d-grid gap-2 login-card">
+                                <button type="submit" class="btn-buy">Enviar Reeporte</button>
+                                <a href="dashboard_usuario.php" class="btn btn-link">Volve a panel</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
