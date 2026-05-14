@@ -15,6 +15,16 @@ $sql="UPDATE Usuario SET Vincule = ?, NombrePc =? ,verificado = 1 WHERE Correo=?
 $stmt =$Conexion->prepare($sql);
 $stmt->bind_param("ssi",$hwid_python,$nombre_pc_python,$Correo);
 $stmt->execute();
-if()
+if ($stmt->affected_rows > 0) {
+    $res = $Conexion->query("SELECT Token FROM Usuario WHERE Correo = '$Correo'");
+    $user = $res->fetch_assoc();
+
+    echo json_encode([
+        "status" => "success",
+        "verificado" => 1,
+        "token" => $user['Token'],
+        "mensaje" => "PC Vinculada con éxito"
+    ]);
+}
     
 ?>
