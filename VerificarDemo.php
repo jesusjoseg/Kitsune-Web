@@ -26,5 +26,8 @@ if ($stmt->affected_rows > 0) {
         "mensaje" => "PC Vinculada con éxito"
     ]);
 }
-    
+else{
+json_encode(["status"=>"error","Mensaje"=>"Correo no encontrado o ya Viculando gato"]);
+}
+$Conexion->$close();
 ?>
