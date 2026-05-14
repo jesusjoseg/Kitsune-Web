@@ -12,10 +12,11 @@ if($_SERVER["REQUEST_METHOD"]=='POST'){
     if($contrasena!==$contrasenac){
         die("Erro: Las contraseña no coinciden");
     }
+    $token=bin2hex(random_bytes(50));
     $password_hash = password_hash($contrasena,PASSWORD_BCRYPT);
-    $sql="INSERT INTO Usuario (Nombre,Apellido,Usuario,Correo,Password,Telefono) VALUES(?,?,?,?,?,?)";
+    $sql="INSERT INTO Usuario (Nombre,Apellido,Usuario,Correo,Password,Telefono,Token) VALUES(?,?,?,?,?,?,?)";
     $stmt = $Conexion->prepare($sql);
-    $stmt -> bind_param("ssssss",$nombre,$apellido,$Usuario,$correo,$password_hash,$telefono);
+    $stmt -> bind_param("sssssss",$nombre,$apellido,$Usuario,$correo,$password_hash,$telefono,$token);
     if($stmt->execute()){
         echo "¡Regristo exitoso! Ahora puede probar el flujo de pago.";
     }
