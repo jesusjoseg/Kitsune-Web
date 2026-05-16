@@ -1,3 +1,4 @@
 .env
 Php/.env
 /Php/.env
+*.zip
