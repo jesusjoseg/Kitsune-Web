@@ -1,12 +1,29 @@
 <?php
 session_start();
 require_once 'Php/Conexion.php';
+if(!isset($_SESSION['user_id']) && isset($_GET['access_token'])){
+    $token_recibido =$_GET['access_token'];
+    $stmt_tk=$Conexion->prepare("SELECT id,Correo,Nivel FROM Usuario WHERE Token =? and verificado=1");
+    $stmt_tk->bind_param("s",$token_recibido);
+    $stmt_tk->execute();
+    $res_tk =$stmt_tk->get_result();
+    if($user_found =$res_tk-> fetch_assoc()){
+        $_SESSION['user_id']=$user_found['id'];
+        $_SESSION['email']=$user_found['Correo'];
+        header("Location: dashboard_usuario.php");
+        exit();
+    }
+    else{
+        header("Location:Login.php?error=token_invalido");
+        exit();
+    }
+}
 if(!isset($_SESSION['user_id'])){
-    header("Location: login.php");
+    header("Location:Login.php");
     exit();
 }
-$user_id = $_SESSION['user_id'];
-$mesanje = '';
+$user_id=$_SESSION['user_id'];
+
 $stmt = $Conexion->prepare("SELECT Nombre,Apellido,Usuario,Correo,Licencia,Nivel,Vincule,NombrePc,Fecha,verificado FROM Usuario WHERE id = ?");
 $stmt->bind_param("i",$user_id);
 $stmt->execute();
