@@ -26,9 +26,9 @@
             <div class="Intrucion">
                 <h4>Intruciones rapidas:</h4>
                 <ol>
-                    <li>Descargar el archivor <strong>.Zip</strong>.</li>
+                    <li>Descargar el archivor <strong>KitsuneDemo.Zip</strong>.</li>
                     <li>Haz click derecho y selecciona "Extraer todo".</li>
-                    <li>Ejecuta el archivo <strong>#####.exe</strong>.</li>
+                    <li>Ejecuta el archivo <strong>KitsunePOS.exe</strong>.</li>
                     <li>Si la aplicacion no abre espera uno minuto por que se esta creando todo la base de dato o si no volve a Ejecuta</li>
                     <li>Tiene 30 dias de prueba gratis.</li>
                 </ol>
